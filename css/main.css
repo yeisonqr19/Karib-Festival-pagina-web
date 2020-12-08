@@ -1,0 +1,590 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 62.5%; /*1 Rem= 10PX*/
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 0.3rem;
+  border: 0;
+  border-top: 0.3rem solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*GLOBALES: */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem; /*16 PX*/
+  font-family: "Raleway", sans-serif;
+  background-color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 9rem;
+  letter-spacing: 2rem;
+  padding-top: 0;
+  display: block;
+  margin-top: -50px;
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 570px) {
+  h1 {
+    margin-top: 2rem;
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 370px) {
+  h1 {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h1 span {
+  font-weight: 900;
+  display: block;
+  font-size: 15rem;
+  letter-spacing: 1rem;
+  font-family: "Libre Franklin", sans-serif;
+  text-shadow: 2px 3px 8px black;
+}
+
+@media (max-width: 570px) {
+  h1 span {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 370px) {
+  h1 span {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 span {
+    font-size: 5rem;
+  }
+}
+h4 {
+  display: inline-block;
+  position: relative;
+  top: -3rem;
+  margin-top: -2rem;
+  text-transform: capitalize;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 400;
+  text-shadow: 1px 3px 10px black;
+}
+
+@media (max-width: 750px) {
+  h4 {
+    z-index: -1;
+  }
+}
+
+@media (max-width: 360px) {
+  h4 {
+    margin-top: 3rem;
+  }
+}
+
+/*HEADER: */
+header {
+  background-image: url("../img/cartagena\ 4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 90rem;
+  z-index: 1;
+}
+
+@media (max-width: 750px) {
+  header {
+    height: 80rem;
+  }
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(246, 245, 245, 0.513);
+  z-index: -2;
+}
+
+.contenido-header {
+  color: #000;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.contenido-header img {
+  width: 40rem;
+  padding: 0;
+  display: inline-block;
+  margin-top: -10rem;
+}
+
+@media (max-width: 750px) {
+  .contenido-header img {
+    width: 25rem;
+    margin-top: -8rem;
+  }
+}
+
+/*NAVEGACION: */
+
+header nav {
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(48, 189, 214, 0.315);
+  padding: 6rem;
+}
+
+.logo img {
+  width: 10rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  object-fit: cover;
+  height: inherit;
+}
+
+@media (max-width: 360px) {
+  .logo img {
+    display: inline-block;
+    position: relative;
+    right: 5rem;
+  }
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+.icono {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .icono {
+    display: flex;
+    justify-content: center;
+    height: 7rem;
+    align-items: center;
+    color: rgb(1, 1, 102);
+    font-weight: bold;
+    font-size: 3rem;
+    background: transparent;
+    cursor: pointer;
+    padding: 2rem;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 360px) {
+  .icono {
+    display: inline-block;
+    position: relative;
+    left: 4rem;
+  }
+}
+
+.enlaces {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  height: 100%;
+}
+
+@media (max-width: 750px) {
+  .enlaces {
+    padding-top: 10rem;
+    position: fixed;
+    height: 800px;
+    width: 100%;
+    right: 0;
+    text-align: center;
+    flex-direction: column;
+    transition: all 1.2s ease;
+    background: rgba(183, 222, 237, 1);
+    background: -moz-linear-gradient(
+      45deg,
+      rgba(183, 222, 237, 1) 0%,
+      rgba(183, 222, 237, 1) 1%,
+      rgba(33, 180, 226, 1) 53%,
+      rgba(113, 206, 239, 1) 82%,
+      rgba(183, 222, 237, 1) 95%,
+      rgba(183, 222, 237, 1) 100%
+    );
+    background: -webkit-gradient(
+      left bottom,
+      right top,
+      color-stop(0%, rgba(183, 222, 237, 1)),
+      color-stop(1%, rgba(183, 222, 237, 1)),
+      color-stop(53%, rgba(33, 180, 226, 1)),
+      color-stop(82%, rgba(113, 206, 239, 1)),
+      color-stop(95%, rgba(183, 222, 237, 1)),
+      color-stop(100%, rgba(183, 222, 237, 1))
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(183, 222, 237, 1) 0%,
+      rgba(183, 222, 237, 1) 1%,
+      rgba(33, 180, 226, 1) 53%,
+      rgba(113, 206, 239, 1) 82%,
+      rgba(183, 222, 237, 1) 95%,
+      rgba(183, 222, 237, 1) 100%
+    );
+    background: -o-linear-gradient(
+      45deg,
+      rgba(183, 222, 237, 1) 0%,
+      rgba(183, 222, 237, 1) 1%,
+      rgba(33, 180, 226, 1) 53%,
+      rgba(113, 206, 239, 1) 82%,
+      rgba(183, 222, 237, 1) 95%,
+      rgba(183, 222, 237, 1) 100%
+    );
+    background: -ms-linear-gradient(
+      45deg,
+      rgba(183, 222, 237, 1) 0%,
+      rgba(183, 222, 237, 1) 1%,
+      rgba(33, 180, 226, 1) 53%,
+      rgba(113, 206, 239, 1) 82%,
+      rgba(183, 222, 237, 1) 95%,
+      rgba(183, 222, 237, 1) 100%
+    );
+    background: linear-gradient(
+      45deg,
+      rgba(183, 222, 237, 1) 0%,
+      rgba(183, 222, 237, 1) 1%,
+      rgba(33, 180, 226, 1) 53%,
+      rgba(113, 206, 239, 1) 82%,
+      rgba(183, 222, 237, 1) 95%,
+      rgba(183, 222, 237, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed', GradientType=1 );
+  }
+}
+
+.enlaces a {
+  margin-right: 2rem;
+  border-top: 0.3rem solid transparent;
+  border-bottom: 0.3rem solid transparent;
+  padding: 0.5rem 0;
+  transition: 0.7s ease-out;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+@media (max-width: 750px) {
+  .enlaces a:last-of-type {
+    margin-bottom: 10rem;
+  }
+}
+.enlaces a:first-of-type {
+  margin-left: 2rem;
+}
+
+@media (max-width: 750px) {
+  .enlaces a:first-of-type {
+    margin-left: 0;
+  }
+}
+
+.enlaces a:hover {
+  border-top: 0.3rem solid rgb(157, 248, 157);
+  border-bottom: 0.3rem solid rgb(157, 248, 157);
+  transform: scale(1.1);
+  color: rgb(3, 3, 63);
+}
+
+@media (max-width: 750px) {
+  .uno {
+    clip-path: circle(0% at 100% 0%);
+    top: 0px;
+  }
+
+  .dos {
+    top: 0px;
+    clip-path: circle(150% at 100% 0);
+  }
+}
+
+/*CONTENIDO MAIN:*/
+
+/*Parte que hacemos*/
+
+.contenido-queHacemos {
+  background-color: #1a1e41;
+  width: 100%;
+  height: 200px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 0.3rem;
+  margin: -0.3rem;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 0.3rem;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 0.3rem solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
