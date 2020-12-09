@@ -2,15 +2,17 @@
 const iconoMenu = document.getElementById("icono");
 const enlaces = document.getElementById("enlaces");
 let ubicacionPrincipal = window.pageYOffset;
+let animado = document.querySelectorAll(".animado");
 
 //EventListener:
-
 eventListener();
 function eventListener() {
   iconoMenu.addEventListener("click", menuDesplegable);
   window.addEventListener("scroll", desplazamientoMenu);
   enlaces.addEventListener("click", controlMenu);
+  window.addEventListener("scroll", animacionElementos);
 }
+
 //Funciones:
 function menuDesplegable(evt) {
   evt.preventDefault();
@@ -37,4 +39,15 @@ function desplazamientoMenu() {
 function controlMenu() {
   enlaces.classList.remove("dos");
   enlaces.classList.add("uno");
+}
+
+function animacionElementos() {
+  let scrollTop = document.documentElement.scrollTop;
+  for (let i = 0; i < animado.length; i++) {
+    let alturaAnimado = animado[i].offsetTop;
+    if (alturaAnimado - 700 < scrollTop) {
+      animado[i].style.opacity = 1;
+      animado[i].classList.add("mostrarArriba");
+    }
+  }
 }
