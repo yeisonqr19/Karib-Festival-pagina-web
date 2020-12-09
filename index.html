@@ -57,20 +57,19 @@
     <!-- Add your site or application content here -->
 
     <header>
-      <nav>
+      <nav id="navBar">
         <div class="logo">
           <a href="index.html"
             ><img src="img/k-nuevoLogo.jpg" alt="Logo KARIB Festival"
           /></a>
         </div>
-
         <div class="icono" id="icono">
           <span><i class="fas fa-bars"></i> </span>
         </div>
-        <div class="enlaces dos" id="enlaces">
-          <a href="#">INICIO</a>
+        <div class="enlaces uno" id="enlaces">
+          <a href="#" title="Ir al inicio de la pagina">INICIO</a>
           <a href="#">CONTACTO</a>
-          <a href="#">QUE HACEMOS</a>
+          <a href="#queHacemos">QUE HACEMOS</a>
           <a href="#">QUIENES SOMOS</a>
           <a href="#">EVENTOS</a>
           <a href="#">EMPRENDIMIENTOS</a>
@@ -84,10 +83,21 @@
     </header>
 
     <main>
-      <div class="contenido-queHacemos">
-        
-      </div>
-
+      <section class="queHacemos" id="queHacemos">
+        <h2 class="tituloHacemos">QUE HACEMOS</h2>
+        <div class="contenidoHacemos">
+          <p>CREAR</p>
+          <p>VISIBILIZAR</p>
+          <p>CONECTAR</p>
+          <p>INSPIRAR</p>
+        </div>
+        <p class="descripcionHacemos">
+          Promueve emprendimientos Culturales y Creativos resaltando por medio
+          de las relaciones interculturales de las diferentes culturas de
+          Colombia y el mundo, dando a conocer acciones y resultados los agentes
+          embajadores y demás actores de todo el Universo Creativo y Cultural
+        </p>
+      </section>
     </main>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
