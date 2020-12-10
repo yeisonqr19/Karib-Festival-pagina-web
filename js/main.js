@@ -36,9 +36,11 @@ function desplazamientoMenu() {
   ubicacionPrincipal = desplazamiento;
 }
 
-function controlMenu() {
-  enlaces.classList.remove("dos");
-  enlaces.classList.add("uno");
+function controlMenu(evt) {
+  if (evt.target.nodeName === "A") {
+    enlaces.classList.remove("dos");
+    enlaces.classList.add("uno");
+  }
 }
 
 function animacionElementos() {
