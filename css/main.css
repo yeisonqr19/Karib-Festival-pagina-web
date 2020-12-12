@@ -551,7 +551,7 @@ p.descripcionHacemos {
 
 @media (max-width: 750px) {
   p.descripcionHacemos {
-    margin: 2rem 1rem 0rem 1.2rem;
+    margin: 2rem 1rem 0rem 1rem;
     font-size: 2rem;
   }
 }
@@ -664,7 +664,11 @@ p.descripcionQuienesSomos {
   p.descripcionQuienesSomos {
     padding-top: 1rem;
     font-size: 1.7rem;
-    margin: 1rem 1rem 1rem 2rem;
+    padding-right: 0.1rem;
+    margin-right: 0;
+    margin-left: 1rem;
+    word-wrap: normal;
+    width: 90%;
   }
 }
 
@@ -746,7 +750,6 @@ section p.descripcionEventos {
   section p.descripcionEventos {
     padding-top: 1rem;
     font-size: 1.7rem;
-    margin: 1rem 1rem 1rem 2rem;
   }
 }
 
@@ -932,6 +935,24 @@ img.img5 {
 
 /*Seccion Emprendimientos*/
 
+@media (max-width: 750px) {
+  section.emprendimientos {
+    margin-top: 60rem;
+  }
+}
+
+@media (max-width: 570px) {
+  section.emprendimientos {
+    margin-top: 37rem;
+  }
+}
+
+@media (max-width: 375px) {
+  section.emprendimientos {
+    margin-top: 30rem;
+  }
+}
+
 section.emprendimientos h2 {
   display: inline-block;
   margin: 0.2rem 0 0 0;
@@ -940,6 +961,27 @@ section.emprendimientos h2 {
   position: relative;
   left: 20rem;
   color: rgb(27, 27, 30);
+}
+
+@media (max-width: 750px) {
+  section.emprendimientos h2 {
+    margin-top: 2rem;
+    left: 0;
+    font-size: 6.5rem;
+  }
+}
+
+@media (max-width: 570px) {
+  section.emprendimientos h2 {
+    font-size: 4.3rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  section.emprendimientos h2 {
+    font-size: 3.5rem;
+  }
 }
 
 section.emprendimientos h2::before {
@@ -951,6 +993,20 @@ section.emprendimientos h2::before {
   background-color: rgb(78, 90, 195);
 }
 
+@media (max-width: 570px) {
+  section.emprendimientos h2::before {
+    width: 3rem;
+    height: 1rem;
+    top: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  section.emprendimientos h2::before {
+    width: 2.8rem;
+  }
+}
+
 section.emprendimientos p {
   font-size: 2.2rem;
   margin: 1rem 20rem 0 30rem;
@@ -959,14 +1015,69 @@ section.emprendimientos p {
   padding: 0 2rem 5rem 0;
 }
 
-section.emprendimientos p:first-of-type{
+@media (max-width: 750px) {
+  section.emprendimientos p {
+    margin: 1.1rem 1rem 0rem 1.2rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 570px) {
+  section.emprendimientos p {
+    font-size: 1.7rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  section.emprendimientos p {
+    font-size: 1.6rem;
+    width: 99%;
+  }
+}
+
+section.emprendimientos p:first-of-type {
   margin-bottom: 0;
   padding-bottom: 0.8rem;
 }
 
-section.emprendimientos p:last-of-type{
+section.emprendimientos p:last-of-type {
   margin-top: 0;
   padding-top: 0;
+}
+
+@media (max-width: 750px) {
+  section.emprendimientos p:last-of-type {
+    margin-top: 0;
+  }
+}
+
+/*Galeria de la seccion Emprendimientos*/
+.galeriaEmprendimiento {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.galeriaImg {
+  width: 300px;
+  height: 280px;
+  margin-bottom: 2rem;
+  object-fit: contain;
+  animation: palpitar 1.5s infinite alternate;
+}
+
+@keyframes palpitar {
+  to {
+    transform: scale(1);
+  }
+
+  from {
+    transform: scale(1.06);
+  }
 }
 
 /* ==========================================================================
