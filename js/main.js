@@ -1,8 +1,17 @@
+"use strict";
+
 //Variables:
 const iconoMenu = document.getElementById("icono");
 const enlaces = document.getElementById("enlaces");
 let ubicacionPrincipal = window.pageYOffset;
 let animado = document.querySelectorAll(".animado");
+
+//Slider:
+const slider = document.querySelector(".sliderContenedor");
+const sliderIndividual = document.querySelectorAll(".contenidoSlider");
+let contador = 1;
+let width = sliderIndividual[0].clientWidth;
+let intervalo = 3000;
 
 //EventListener:
 eventListener();
@@ -11,6 +20,9 @@ function eventListener() {
   window.addEventListener("scroll", desplazamientoMenu);
   enlaces.addEventListener("click", controlMenu);
   window.addEventListener("scroll", animacionElementos);
+  window.addEventListener("resize", () => {
+    width = sliderIndividual[0].clientWidth;
+  });
 }
 
 //Funciones:
@@ -53,3 +65,22 @@ function animacionElementos() {
     }
   }
 }
+
+//Funciones para Controlar el slider:
+function slides() {
+  slider.style.transform = "translate(" + -width * contador + "px)";
+  slider.style.transition = "transform 0.8s";
+  contador++;
+
+  if (contador === sliderIndividual.length) {
+    setTimeout(function () {
+      slider.style.transform = "translate(0px)";
+      slider.style.transition = "transform 0s";
+      contador = 1;
+    }, 1500);
+  }
+}
+
+setInterval(function () {
+  slides();
+}, intervalo);

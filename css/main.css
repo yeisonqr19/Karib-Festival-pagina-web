@@ -101,7 +101,7 @@ h1 {
   line-height: 1.1;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 6rem;
   }
@@ -166,7 +166,7 @@ h4 {
   text-shadow: 1px 3px 10px black;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   h4 {
     z-index: -1;
   }
@@ -216,7 +216,7 @@ header::after {
   margin-top: -10rem;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .contenido-header img {
     width: 25rem;
     margin-top: -8rem;
@@ -238,7 +238,7 @@ header nav {
   transition: all 1s ease;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   header nav {
     padding-bottom: 5rem;
   }
@@ -268,7 +268,7 @@ header nav {
   display: none;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .icono {
     display: flex;
     justify-content: center;
@@ -300,7 +300,7 @@ header nav {
   height: 100%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .enlaces {
     padding-top: 10rem;
     position: fixed;
@@ -381,13 +381,13 @@ header nav {
   font-weight: 500;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .enlaces a:last-of-type {
     margin-bottom: 10rem;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .enlaces a {
     padding: 0 2rem;
     margin-right: 0;
@@ -398,7 +398,7 @@ header nav {
   margin-left: 2rem;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .enlaces a:first-of-type {
     margin-left: 0;
   }
@@ -411,7 +411,7 @@ header nav {
   color: rgb(3, 3, 63);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .uno {
     clip-path: circle(0% at 100% 0%);
     top: 0px;
@@ -438,12 +438,12 @@ h2.tituloHacemos {
   display: inline-block;
   margin: 0;
   font-size: 8rem;
-  padding: 2rem 0 0 2rem;
+  padding: 1.5rem 0 0 2rem;
   position: relative;
   left: 20rem;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   h2.tituloHacemos {
     left: 0;
   }
@@ -549,10 +549,10 @@ p.descripcionHacemos {
   font-size: 2.2rem;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   p.descripcionHacemos {
     margin: 2rem 1rem 0rem 1rem;
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -597,7 +597,7 @@ p.descripcionHacemos {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(250, 250, 250, 0.856);
+  background: rgba(250, 250, 250, 0.74);
   z-index: -1;
 }
 
@@ -605,13 +605,13 @@ p.descripcionHacemos {
   display: inline-block;
   margin: 0;
   font-size: 8rem;
-  padding: 2rem 0 0 2rem;
+  padding: 1.5rem 0 0 2rem;
   position: relative;
   left: 20rem;
   color: rgb(27, 27, 30);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .quienesSomos h2 {
     left: 0;
   }
@@ -626,6 +626,7 @@ p.descripcionHacemos {
 @media (max-width: 375px) {
   .quienesSomos h2 {
     font-size: 3.8rem;
+    padding-top: 2rem;
   }
 }
 
@@ -653,10 +654,10 @@ p.descripcionQuienesSomos {
   padding: 0 2rem 5rem 0;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   p.descripcionQuienesSomos {
     margin: 2rem 1rem 0rem 1.2rem;
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -688,13 +689,13 @@ section.eventos h2 {
   display: inline-block;
   margin: 0.2rem 0 0 0;
   font-size: 8rem;
-  padding: 2rem 0 0 2rem;
+  padding: 1.5rem 0 0 2rem;
   position: relative;
   left: 20rem;
   color: rgb(27, 27, 30);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   section.eventos h2 {
     margin-top: 2rem;
     left: 0;
@@ -705,12 +706,14 @@ section.eventos h2 {
   section.eventos h2 {
     font-size: 5rem;
     margin-top: 1rem;
+    padding-top: 1.7rem;
   }
 }
 
 @media (max-width: 375px) {
   section.eventos h2 {
     font-size: 3.8rem;
+    padding-top: 2rem;
   }
 }
 
@@ -738,10 +741,10 @@ section p.descripcionEventos {
   padding: 0 2rem 5rem 0;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   section p.descripcionEventos {
     margin: 2rem 1rem 0rem 1.2rem;
-    font-size: 2rem;
+    font-size: 2.1rem;
     padding-bottom: 0;
   }
 }
@@ -787,7 +790,7 @@ section p.descripcionEventos {
     "img1 img1 img5 img5";
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .containerGrid {
     margin: 0 0.6rem;
     height: 10rem;
@@ -812,7 +815,7 @@ section p.descripcionEventos {
   grid-area: img1;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .img1 {
     width: 40rem;
     height: 30rem;
@@ -837,7 +840,7 @@ section p.descripcionEventos {
   grid-area: img2;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .img2 {
     width: 30rem;
     height: 25rem;
@@ -855,7 +858,7 @@ section p.descripcionEventos {
   grid-area: img3;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .img3 {
     width: 30rem;
     height: 20rem;
@@ -880,7 +883,7 @@ section p.descripcionEventos {
   grid-area: img4;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .img4 {
     width: 30rem;
     height: 30rem;
@@ -910,7 +913,7 @@ img.img5 {
   object-fit: cover;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   img.img5 {
     height: 30rem;
     width: 30rem;
@@ -935,7 +938,7 @@ img.img5 {
 
 /*Seccion Emprendimientos*/
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   section.emprendimientos {
     margin-top: 60rem;
   }
@@ -957,13 +960,13 @@ section.emprendimientos h2 {
   display: inline-block;
   margin: 0.2rem 0 0 0;
   font-size: 8rem;
-  padding: 2rem 0 0 2rem;
+  padding: 1.5rem 0 0 2rem;
   position: relative;
   left: 20rem;
   color: rgb(27, 27, 30);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   section.emprendimientos h2 {
     margin-top: 2rem;
     left: 0;
@@ -975,6 +978,7 @@ section.emprendimientos h2 {
   section.emprendimientos h2 {
     font-size: 4.3rem;
     padding-left: 1rem;
+    padding-top: 1.2rem;
   }
 }
 
@@ -1015,10 +1019,10 @@ section.emprendimientos p {
   padding: 0 2rem 5rem 0;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   section.emprendimientos p {
     margin: 1.1rem 1rem 0rem 1.2rem;
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -1046,7 +1050,7 @@ section.emprendimientos p:last-of-type {
   padding-top: 0;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   section.emprendimientos p:last-of-type {
     margin-top: 0;
   }
@@ -1070,14 +1074,251 @@ section.emprendimientos p:last-of-type {
   animation: palpitar 1.5s infinite alternate;
 }
 
-@keyframes palpitar {
-  to {
-    transform: scale(1);
+@media screen and (max-width: 570px) {
+  .galeriaImg {
+    width: 250px;
+    height: 200px;
   }
+}
 
-  from {
-    transform: scale(1.06);
+@media screen and (max-width: 375px) {
+  .galeriaImg {
+    width: 150px;
+    height: 150px;
   }
+}
+
+/*Seccion de perfiles*/
+section.perfiles {
+  background-color: #cad0da;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+section.perfiles h2 {
+  display: inline-block;
+  margin: 0;
+  font-size: 8rem;
+  padding: 1.5rem 0 0 2rem;
+  position: relative;
+  left: 20rem;
+}
+
+@media (max-width: 768px) {
+  section.perfiles h2 {
+    left: 0;
+  }
+}
+
+@media (max-width: 570px) {
+  section.perfiles h2 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  section.perfiles h2 {
+    font-size: 3.8rem;
+  }
+}
+
+section.perfiles h2::before {
+  content: "";
+  position: absolute;
+  width: 5.1rem;
+  height: 1.2rem;
+  top: 1.8rem;
+  background-color: rgb(78, 90, 195);
+}
+
+@media (max-width: 570px) {
+  section.perfiles h2::before {
+    width: 3rem;
+    height: 1rem;
+    top: 1rem;
+  }
+}
+
+section p.introPerfiles {
+  font-size: 2.2rem;
+  margin: 1rem 20rem 0 30rem;
+  color: #000;
+  text-align: left;
+  padding: 0 2rem 5rem 0;
+}
+
+@media (max-width: 768px) {
+  section p.introPerfiles {
+    font-size: 2.1rem;
+    margin: 1.1rem 1rem 0 1.2rem;
+  }
+}
+
+@media (max-width: 570px) {
+  section p.introPerfiles {
+    font-size: 1.7rem;
+    margin: 1rem 1rem 0 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  section p.introPerfiles {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+}
+
+/*Galeria de imagenes de la seccion de Perfiles: */
+.galeriaPerfiles {
+  width: 100%;
+  overflow: hidden;
+}
+
+.contenidoSlider {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 375px) {
+  .contenidoSlider {
+    flex-direction: column-reverse;
+  }
+}
+
+.contenidoSlider:nth-child(1) {
+  background-color: #f3f5f8;
+  color: black;
+}
+
+.contenidoSlider:nth-child(2) {
+  background-color: aquamarine;
+  color: black;
+}
+
+.contenidoSlider:nth-child(3) {
+  background-color: #f3f5f8;
+  color: black;
+}
+
+.contenidoSlider:nth-child(4) {
+  background-color: aquamarine;
+  color: black;
+}
+
+.contenidoSlider:nth-child(5) {
+  background-color: #f3f5f8;
+  color: black;
+}
+
+.contenidoSlider:nth-child(6) {
+  background-color: aquamarine;
+  color: black;
+}
+
+.contenidoSlider:nth-child(7) {
+  background-color: #f3f5f8;
+  color: black;
+}
+
+.contenidoSlider:nth-child(8) {
+  background-color: #f3f5f8;
+  color: black;
+}
+
+.contenidoSlider > img {
+  width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .contenidoSlider > img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .contenidoSlider > img {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contenidoSlider > img {
+    padding-top: 2rem;
+    width: 220px;
+  }
+}
+
+.contenidoSlider > section {
+  width: 40%;
+}
+
+@media screen and (max-width: 375px) {
+  .contenidoSlider > section {
+    width: 95%;
+  }
+}
+
+.contenidoSlider section > h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 570px) {
+  .contenidoSlider section > h3 {
+    font-size: 1.8rem;
+  }
+}
+
+.contenidoSlider section > p {
+  text-align: justify;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contenidoSlider section > p {
+    line-height: 2.7rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .contenidoSlider section > p {
+    line-height: 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contenidoSlider section > p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+.contenidoSlider section > a {
+  color: white;
+  background-color: rgb(78, 90, 195);
+  width: 10rem;
+  display: block;
+  padding: 1.5rem 0;
+  text-align: center;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+}
+
+.contenidoSlider section > a:hover {
+  transform: scale(1.1);
+}
+
+.sliderContenedor {
+  width: 100%;
+  display: flex;
 }
 
 /* ==========================================================================
@@ -1105,6 +1346,16 @@ section.emprendimientos p:last-of-type {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes palpitar {
+  to {
+    transform: scale(1);
+  }
+
+  from {
+    transform: scale(1.06);
   }
 }
 
