@@ -69,7 +69,7 @@ function animacionElementos() {
 //Funciones para Controlar el slider:
 function slides() {
   slider.style.transform = "translate(" + -width * contador + "px)";
-  slider.style.transition = "transform 0.8s";
+  slider.style.transition = "transform 1s";
   contador++;
 
   if (contador === sliderIndividual.length) {
@@ -77,7 +77,7 @@ function slides() {
       slider.style.transform = "translate(0px)";
       slider.style.transition = "transform 0s";
       contador = 1;
-    }, 1500);
+    }, 2000);
   }
 }
 
