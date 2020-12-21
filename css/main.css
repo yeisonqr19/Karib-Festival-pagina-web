@@ -179,7 +179,7 @@ h4 {
 }
 
 /*HEADER: */
-header {
+header.paginaPrincipal {
   background-image: url("../img/cartagena\ 4.jpg");
   background-size: cover;
   background-position: center;
@@ -1158,7 +1158,6 @@ footer {
   background-color: #202020;
   color: white;
   width: 100%;
-  /* padding: 4rem; */
   font-size: 1.8rem;
 }
 
@@ -1293,6 +1292,132 @@ footer {
   height: 200px;
 }
 
+/*PAGINA DE ENTREVISTAS*/
+
+body.entrevistas {
+  background-image: url("../img/fondoCartagenaEntrevistas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.todoPerfilesK {
+  position: relative;
+  z-index: -1;
+}
+.todoPerfilesK::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(250, 250, 250, 0.904);
+  z-index: -2;
+}
+.entrevistasInicio {
+  margin: 26rem auto 0 auto;
+}
+
+.entrevistasInicio h1 {
+  margin-left: 28rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 9rem;
+  letter-spacing: 0;
+  padding-bottom: 2rem;
+  display: block;
+  line-height: 1.1;
+}
+
+.introEntrevistas {
+  display: flex;
+  max-width: 120rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+img.logoKarib {
+  height: 28rem;
+  width: 28.2rem;
+  object-fit: contain;
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+img.logoKarib:hover {
+  transform: scale(1.07);
+}
+
+p.descripcionEntrevistas {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: #000;
+  margin: 0;
+}
+
+p.descripcionEntrevistas span {
+  font-weight: bold;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/*Seccion de entrevistados:*/
+.entrevistado {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.imagenPerfilK {
+  width: 50%;
+  height: 100%;
+}
+
+div.imagenPerfilK img {
+  object-fit: cover;
+  width: 100%;
+  height: 120vh;
+  padding-right: 2rem;
+  border-radius: 4rem 1rem;
+}
+
+
+.entrevistaPerfil {
+  width: 50%;
+  height: 100%;
+  margin-right: 0.8rem;
+}
+
+.preguntasRespuestas {
+  color: #000;
+  padding: 1rem;
+}
+
+.preguntasRespuestas h2 {
+  padding-top: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p.respuesta {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+p.pregunta {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: solid;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
