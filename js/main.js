@@ -11,7 +11,7 @@ let validator = validador();
 const slider = document.querySelector(".sliderContenedor");
 const sliderIndividual = document.querySelectorAll(".contenidoSlider");
 let contador = 1;
-let intervalo = 3000;
+let intervalo = 6000;
 
 //EventListener:
 eventListener();

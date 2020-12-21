@@ -1331,6 +1331,23 @@ body.entrevistas {
   line-height: 1.1;
 }
 
+@media (max-width: 768px) {
+  .entrevistasInicio h1 {
+    margin-left: 7rem;
+    font-size: 8rem;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 375px) {
+  .entrevistasInicio h1 {
+    margin-left: 1rem;
+    font-size: 6rem;
+    position: relative;
+    top: -6rem;
+  }
+}
+
 .introEntrevistas {
   display: flex;
   max-width: 120rem;
@@ -1339,12 +1356,28 @@ body.entrevistas {
   margin: 0 auto;
 }
 
+@media (max-width: 375px) {
+  .introEntrevistas {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
 img.logoKarib {
   height: 28rem;
   width: 28.2rem;
   object-fit: contain;
   transition: all 0.8s ease-in-out;
   cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  img.logoKarib {
+    height: 17rem;
+    width: 17.2rem;
+    position: relative;
+    top: -5rem;
+  }
 }
 
 img.logoKarib:hover {
@@ -1358,24 +1391,61 @@ p.descripcionEntrevistas {
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  p.descripcionEntrevistas {
+    font-size: 1.7rem;
+    margin-right: 1.3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  p.descripcionEntrevistas {
+    position: relative;
+    top: -3rem;
+  }
+}
 p.descripcionEntrevistas span {
   font-weight: bold;
   font-size: 3rem;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+p.descripcionEntrevistas span:hover {
+  transform: scale(1.01);
+}
+
+@media (max-width: 768px) {
+  p.descripcionEntrevistas span {
+    font-size: 2rem;
+  }
 }
 
 /*Seccion de entrevistados:*/
 .entrevistado {
   display: flex;
   flex-direction: row;
-  min-width: 100%;
+  max-width: 100%;
   justify-content: center;
   margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .entrevistado {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .imagenPerfilK {
   width: 50%;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .imagenPerfilK {
+    width: 100%;
+  }
 }
 
 div.imagenPerfilK img {
@@ -1386,11 +1456,25 @@ div.imagenPerfilK img {
   border-radius: 4rem 1rem;
 }
 
+@media (max-width: 375px) {
+  div.imagenPerfilK img {
+    width: 100vw;
+    height: 50vh;
+    object-fit: contain;
+  }
+}
 
 .entrevistaPerfil {
   width: 50%;
   height: 100%;
   margin-right: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .entrevistaPerfil {
+    width: 99%;
+    margin: 0;
+  }
 }
 
 .preguntasRespuestas {
@@ -1407,6 +1491,13 @@ div.imagenPerfilK img {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .preguntasRespuestas h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
 p.respuesta {
   font-size: 1.8rem;
   line-height: 1.4;
@@ -1418,6 +1509,91 @@ p.pregunta {
   font-weight: bold;
   text-decoration: solid;
 }
+
+/*VENTANA EMERGENTE*/
+.contenido {
+  width: 40%;
+  height: 40%;
+  margin: auto;
+}
+
+.contenido img {
+  width: 40vw;
+  height: 43vh;
+  object-fit: contain;
+}
+
+@media (max-width: 570px) {
+  .contenido img {
+    position: absolute;
+    width: 40rem;
+    left: 8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .contenido img {
+    width: 81vw;
+    height: 42vh;
+    left: 4rem;
+  }
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 50;
+  animation: modal 2s 0.4s forwards;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#cerrar {
+  display: none;
+}
+
+#cerrar + label {
+  position: fixed;
+  z-index: 60;
+  color: #fff;
+  top: 6rem;
+  right: 7rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  background-color: darkred;
+  height: 3.7rem;
+  width: 3.7rem;
+  line-height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  animation: modal 2s 0.4s forwards;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+#cerrar + label:hover {
+  transform: scale(1.2);
+}
+
+@keyframes modal {
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+#cerrar:checked + label,
+#cerrar:checked ~ .modal {
+  display: none;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1453,6 +1629,12 @@ p.pregunta {
 
   from {
     transform: scale(1.06);
+  }
+}
+
+@media (max-width: 768px) {
+  .voltear {
+    flex-direction: column-reverse;
   }
 }
 
