@@ -3,11 +3,12 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+   Hecho por Yeison Quiroz Reyes
+   Desarrollador Web
 
 # THANKS
 
-    <name>
+    Muchas Gracias A karib Festival por permitirme hacer parte de este gran proyecto.
 
 # TECHNOLOGY COLOPHON
 
