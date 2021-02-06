@@ -1510,88 +1510,12 @@ p.pregunta {
   text-decoration: solid;
 }
 
-/*VENTANA EMERGENTE*/
-.contenido {
-  width: 40%;
-  height: 40%;
-  margin: auto;
+/* SEGUNDA CORRECCION DE CODIGO: */
+.fecha {
+  display: inline;
 }
-
-.contenido img {
-  width: 40vw;
-  height: 43vh;
-  object-fit: contain;
-}
-
-@media (max-width: 570px) {
-  .contenido img {
-    position: absolute;
-    width: 40rem;
-    left: 8rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .contenido img {
-    width: 81vw;
-    height: 42vh;
-    left: 4rem;
-  }
-}
-
-.modal {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
-  top: 0;
-  left: 0;
-  display: flex;
-  z-index: 50;
-  animation: modal 2s 0.4s forwards;
-  visibility: hidden;
-  opacity: 0;
-}
-
-#cerrar {
-  display: none;
-}
-
-#cerrar + label {
-  position: fixed;
-  z-index: 60;
-  color: #fff;
-  top: 6rem;
-  right: 7rem;
-  font-size: 2.4rem;
-  font-weight: bold;
-  background-color: darkred;
-  height: 3.7rem;
-  width: 3.7rem;
-  line-height: 4rem;
-  border-radius: 50%;
-  cursor: pointer;
-  text-align: center;
-  animation: modal 2s 0.4s forwards;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-}
-
-#cerrar + label:hover {
-  transform: scale(1.2);
-}
-
-@keyframes modal {
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-#cerrar:checked + label,
-#cerrar:checked ~ .modal {
-  display: none;
+.copi {
+  display: inline;
 }
 
 /* ==========================================================================

@@ -20,6 +20,7 @@ function eventListener() {
   window.addEventListener("scroll", desplazamientoMenu);
   enlaces.addEventListener("click", controlMenu);
   window.addEventListener("DOMContentLoaded", validador);
+  window.addEventListener("DOMContentLoaded", insertYear);
 
   //Cree estos if para controlar en que pagina de mi sitio web estoy en todo momento, gracias a esto puedo decidir que funcion se ejecuta y que no dependiendo del contenido.
   if (validator) {
@@ -27,6 +28,8 @@ function eventListener() {
     window.addEventListener("resize", () => {
       width = sliderIndividual[0].clientWidth;
     });
+
+    console.log(validator);
 
     //Funciones para Controlar el slider:
     function slides() {
@@ -63,9 +66,15 @@ function eventListener() {
 //Funciones:
 
 function validador() {
-  let paginaActual = window.location.pathname;
-  let validator = paginaActual.includes("index");
-  return validator;
+  let comprobante = document.querySelectorAll(".index");
+  let vali = false;
+  if (comprobante.length === 1) {
+    vali = true;
+    return vali;
+  } else {
+    vali = false;
+    return vali;
+  }
 }
 
 function menuDesplegable(evt) {
@@ -95,4 +104,12 @@ function controlMenu(evt) {
     enlaces.classList.remove("dos");
     enlaces.classList.add("uno");
   }
+}
+
+function insertYear() {
+  const fecha = document.querySelector("#fecha");
+  let year = new Date().getFullYear();
+  const span = document.createElement("span");
+  span.textContent = year;
+  fecha.appendChild(span);
 }
